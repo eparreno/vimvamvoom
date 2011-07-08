@@ -34,3 +34,9 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise
+[submodule "bundle/vim-conque"]
+	path = bundle/vim-conque
+	url = https://github.com/rson/vim-conque.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic/

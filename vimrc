@@ -1,17 +1,17 @@
 :let mapleader=","
 :imap jj <Esc>
 
+filetype plugin indent on
+
 set nocompatible
 
 set number
 set ruler
 syntax on
+set paste
 
 " Set encoding
 set encoding=utf-8
-
-"Remove top bar
-set guioptions=aAce
 
 " Whitespace stuff
 set nowrap
@@ -19,6 +19,27 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+
+" Rspec
+function! RunSpec(command)
+  " TODO: handle args such as --tag focus here, or make a separate command for it
+  let spec = ":ConqueTermSplit bundle exec rspec"
+  if a:command == ''
+    let dir = ''
+  else
+    let dir = a:command
+  endif
+  execute spec." -r spec/support/vim_formatter -f RSpec::Core::Formatters::VimFormatter -cfn " . dir . " " . bufname('%')
+  cw
+endfunction
+command! -nargs=? -complete=file Spec call RunSpec(<q-args>)
+map <leader>s :call RunSpec(" -l " . <C-r>=line('.')<CR>)
+map <leader>S :call RunSpec("")
+
+
+" NERDTree configuration
+let NERDTreeIgnore=['\.rbc$', '\~$', '\.git']
+map <Leader>n :NERDTreeToggle<CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -31,19 +52,16 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
 " Tab completion
-set wildmode=list:longest,list:full
+set wildmenu
+set wildmode=longest,full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,test/fixtures/*,vendor/gems/*
-
-"fullscreen mode
-map <D-CR> :set invfu<CR>     "toggle fullscreen mode
-set fuoptions+=maxvert,maxhorz
 
 "statusline setup
 set statusline=%f       "tail of the filename
-set statusline+=%m      "modified flag
-"Git
-set statusline+=[%{fugitive#statusline()}]
+
 set statusline+=%y      "filetype
+set statusline+=%{fugitive#statusline()}
+set statusline+=%m      "modified flag
 
 set statusline+=%=      "left/right separator
 set statusline+=%c,     "cursor column
@@ -53,6 +71,14 @@ set laststatus=2
 
 "Pathogne plugin
 call pathogen#runtime_append_all_bundles() 
+
+" Unimpaired configuration
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
 
 "color
 if has("gui_running")
@@ -94,4 +120,9 @@ else
     else
         colorscheme default
     endif
+endif
+
+" Include user's local vim config
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
 endif
