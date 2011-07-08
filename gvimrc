@@ -1,15 +1,19 @@
-if has("gui_macvim")
-  " Fullscreen takes up entire screen
-	set fuoptions+=maxvert,maxhorz
+" Don't beep
+set visualbell
 
+" No toolbar
+set guioptions-=T
+
+" Use console dialogs
+set guioptions+=c
+
+if has("gui_macvim")
+ 
   " Command-Return for fullscreen
   "macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
 
   " Command-Shift-F for Ack
   " map <D-F> :Ack<space>
-
-  " Command-e for ConqueTerm
-  map <D-e> :call StartTerm()<CR>
 
   " Command-/ to toggle comments
   "map <D-/> <plug>NERDCommenterToggle<CR>
@@ -17,9 +21,10 @@ if has("gui_macvim")
 
 
   " Command-][ to increase/decrease indentation
-  "vmap <D-]> >gv
-  "vmap <D-[> <gv
+   vmap <D-]> >gv
+   vmap <D--> <gv
 
+                              
   " Map Command-# to switch tabs
   map  <D-0> 0gt
   imap <D-0> <Esc>0gt
@@ -57,14 +62,6 @@ if has("gui_macvim")
   imap <Leader>= <Esc> <C-w>=
 endif
 
-" Don't beep
-set visualbell
-
-" Start without the toolbar
-set guioptions=aAce
-
-" Default gui color scheme
-color ir_black
 
 " ConqueTerm wrapper
 function StartTerm()
@@ -72,7 +69,10 @@ function StartTerm()
   setlocal listchars=tab:\ \ 
 endfunction
 
-" Project Tree
+" NERDTree configuration
+let NERDTreeIgnore=['\.rbc$', '\~$', '\.git']
+map <Leader>n :NERDTreeToggle<CR>
+
 autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
 autocmd FocusGained * call s:UpdateNERDTree()
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()

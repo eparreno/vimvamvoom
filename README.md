@@ -9,7 +9,12 @@ Vim, vam, voom is Emili Parreño's vim distribution. Still in development!!!
 Then "cd" into the repo and run this to update submodules:
 
 		git submodule update --init
-		
+
+Link vimrc, and gvimrc
+
+    ln -s .vim/vimrc .vimrc
+    ln -s .vim/gvimrc .gvimrc		
+
 ### Help tags
 
 At first usage of vim execute:
