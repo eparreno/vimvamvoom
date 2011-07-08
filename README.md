@@ -38,6 +38,13 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 * Soft 2-space tabs, and default hard tabs to 2 spaces
 * Highlight unwanted spaces
 
+## Mappings
+
+Cmd-Option-(left, right, up, down) switch viewports
+Cmd-(1-9) switch tabs
+Cmd-e Open a terminal
+<leader>=  Adjust viewports to the same size 
+ 
 ## Bundled Plugins
 
 ### Fugitive
