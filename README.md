@@ -1,6 +1,13 @@
 # Vim, Vam, Voom
 
-Vim, vam, voom is Emili Parreño's vim distribution. Still in development
+Vim, vam, voom is Emili Parreño's vim distribution. Still in development!!!
+
+## Customization
+
+Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
+
+    echo color desert  > ~/.vimrc.local
+    echo color molokai > ~/.gvimrc.local
 
 ## Usage
 
@@ -10,18 +17,6 @@ Then "cd" into the repo and run this to update submodules:
 
 		git submodule update --init
 		
-Now you should create a new .vimrc file in your home directory that
-loads the pre-configured one that comes bundled in this package. You can do it
-on Linux/Mac like this:
-
-		echo "source ~/.vim/vimrc" > ~/.vimrc
-	
-You should also create a new .gvimrc file in your home directory. You can do 
-it on Linux/Mac like this:
-
-		echo "source ~/.vim/gvimrc" > ~/.gvimrc
-		
-
 ### Help tags
 
 At first usage of vim execute:
@@ -43,12 +38,12 @@ Soft 2-space tabs, and default hard tabs to 2 spaces
 support for Git, adding convenient commands such as :Gstatus, :Gread, :Gmove, :Gdiff, :Glog etc
 https://github.com/tpope/vim-fugitive.git
 
-## Nedtree
+### Nedtree
 
 project navigator that you can open with [leader] n
 http://www.vim.org/scripts/script.php?script_id=1658
 
-## NERD_commenter
+### NERD_commenter
 
 support to comment lines of code
 [count]<leader>cc 
@@ -129,6 +124,7 @@ https://github.com/scrooloose/syntastic/
 Visit the following sites to learn more about Vim:
 
 http://vimcasts.org
+
 There are many sites teaching Vim, if you know of any other that are easy
 to follow for newcomers, let me know
 
