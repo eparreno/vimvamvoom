@@ -36,6 +36,7 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 * Ruler
 * Show git branch in status line
 * Soft 2-space tabs, and default hard tabs to 2 spaces
+* Highlight unwanted spaces
 
 ## Bundled Plugins
 

@@ -4,11 +4,13 @@ set visualbell
 " No toolbar
 set guioptions-=T
 
+" Start without the toolbar
+set guioptions=aAce
 " Use console dialogs
 set guioptions+=c
 
 if has("gui_macvim")
- 
+
   " Command-Return for fullscreen
   "macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
 
@@ -19,12 +21,6 @@ if has("gui_macvim")
   "map <D-/> <plug>NERDCommenterToggle<CR>
   "imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
 
-
-  " Command-][ to increase/decrease indentation
-   vmap <D-]> >gv
-   vmap <D--> <gv
-
-                              
   " Map Command-# to switch tabs
   map  <D-0> 0gt
   imap <D-0> <Esc>0gt

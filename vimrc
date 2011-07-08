@@ -3,14 +3,9 @@ set nocompatible
 :let mapleader=","
 :imap jj <Esc>
 
-" Numbers
 set number
-set numberwidth=5
-
 set ruler
 set paste
-
-" Set encoding
 set encoding=utf-8
 
 " Whitespace stuff
@@ -46,16 +41,15 @@ set fuoptions+=maxvert,maxhorz
 
 colorscheme ir_black
 set guitablabel=%M%t
-set lines=40
 set linespace=1
-set columns=115
 set guifont=Monaco:h12
+
+" Display extra whitespace
+"set list listchars=tab:».,trail:·
+set list listchars=tab:..,trail:·
 
 " Command-e for ConqueTerm
 map <D-e> :call StartTerm()<CR>
-
-" Start without the toolbar
-set guioptions=aAce
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
