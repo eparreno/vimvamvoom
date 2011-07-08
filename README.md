@@ -2,13 +2,6 @@
 
 Vim, vam, voom is Emili Parreño's vim distribution. Still in development!!!
 
-## Customization
-
-Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
-
-    echo color desert  > ~/.vimrc.local
-    echo color molokai > ~/.gvimrc.local
-
 ## Usage
 
 		git clone git://github.com/eparreno/vimvamvoom.git ~/.vim
@@ -25,11 +18,19 @@ At first usage of vim execute:
 
 This will make the plugins documentations available upon :help
 
-## Customizations
-Line numbers
-Ruler
-Show git branch in status line
-Soft 2-space tabs, and default hard tabs to 2 spaces
+## Customization
+
+Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
+
+    echo color desert  > ~/.vimrc.local
+    echo color molokai > ~/.gvimrc.local
+
+## Base Customizations
+
+* Line numbers
+* Ruler
+* Show git branch in status line
+* Soft 2-space tabs, and default hard tabs to 2 spaces
 
 ## Bundled Plugins
 
