@@ -22,14 +22,6 @@
 	path = bundle/vim-rails
   url = https://github.com/tpope/vim-rails.git
   ignore=dirty
-[submodule "bundle/textile"]
-	path = bundle/textile
-  url = git://github.com/timcharper/textile.vim.git
-  ignore=dirty
-[submodule "bundle/markdown"]
-	path = bundle/markdown
-  url = git://github.com/tpope/vim-markdown.git
-  ignore=dirty
 [submodule "bundle/vim-preview"]
 	path = bundle/vim-preview
   url = https://github.com/greyblake/vim-preview.git
@@ -53,4 +45,8 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
   url = https://github.com/scrooloose/syntastic/
+  ignore=dirty
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
   ignore=dirty

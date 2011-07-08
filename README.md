@@ -81,16 +81,6 @@ Rails support for vim
 http://www.vim.org/scripts/script.php?script_id=1567
 https://github.com/tpope/vim-rails
 
-### Textile
-
-http://www.vim.org/scripts/script.php?script_id=2305
-http://github.com/timcharper/textile.vim
-
-### Markdown
-
-http://www.vim.org/scripts/script.php?script_id=1242
-http://github.com/tpope/vim-markdown
-
 ### vim-preview
 
 [leader] P previews Markdown, Rdoc, Textile, html. Requires Ruby and other gems.
