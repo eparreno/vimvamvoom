@@ -51,6 +51,9 @@ set list listchars=tab:..,trail:·
 " Command-e for ConqueTerm
 map <D-e> :call StartTerm()<CR>
 
+" Ragtag autocomplete open html tags
+map <D-…> :call ragtag-CTRL-X_/*<CR>
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")

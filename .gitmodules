@@ -50,3 +50,7 @@
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
   ignore=dirty
+[submodule "bundle/vim-ragtag"]
+	path = bundle/vim-ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+  ignore=dirty

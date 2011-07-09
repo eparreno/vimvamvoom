@@ -15,6 +15,13 @@ Link vimrc, and gvimrc
     ln -s .vim/vimrc .vimrc
     ln -s .vim/gvimrc .gvimrc		
 
+### Updating to the latest version
+
+  cd .vim
+  git pull
+  git submodule sync 
+  git submodule update --init --recursive
+
 ### Help tags
 
 At first usage of vim execute:
@@ -122,6 +129,10 @@ http://code.google.com/p/conque/
 checks for syntax errors in many languages
 http://www.vim.org/scripts/script.php?script_id=2736
 https://github.com/scrooloose/syntastic/
+
+## Contribute
+
+I'm always happy to take pull requests from others and improve this vim distribution. Go ahead and fork me!
 
 ## Learn Vim
 
