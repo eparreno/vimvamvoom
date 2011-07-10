@@ -134,15 +134,8 @@ https://github.com/scrooloose/syntastic/
 
 I'm always happy to take pull requests from others and improve this vim distribution. Go ahead and fork me!
 
-## Learn Vim
-
-Visit the following sites to learn more about Vim:
-
-http://vimcasts.org
-
-There are many sites teaching Vim, if you know of any other that are easy
-to follow for newcomers, let me know
-
 ## Credits
 
 Emili Parreño
+Vim, Vam, Voom is based on various vim distributions and vim config files.
+Thanks to Fabio Akita, Martin Grenfell, Carl Lerche, Yehuda Katz and Joe Ferris

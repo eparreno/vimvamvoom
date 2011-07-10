@@ -36,10 +36,6 @@ set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 set laststatus=2
 
-" Fullscreen takes up entire screen
-set fuoptions+=maxvert,maxhorz
-
-colorscheme ir_black
 set guitablabel=%M%t
 set linespace=1
 set guifont=Monaco:h12
@@ -48,11 +44,7 @@ set guifont=Monaco:h12
 "set list listchars=tab:».,trail:·
 set list listchars=tab:..,trail:·
 
-" Command-e for ConqueTerm
-map <D-e> :call StartTerm()<CR>
-
-" Ragtag autocomplete open html tags
-map <D-…> :call ragtag-CTRL-X_/*<CR>
+colorscheme ir_black
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.

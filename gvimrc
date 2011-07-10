@@ -9,7 +9,13 @@ set guioptions=aAce
 " Use console dialogs
 set guioptions+=c
 
+" Fullscreen takes up entire screen
+set fuoptions+=maxvert,maxhorz
+
 if has("gui_macvim")
+
+  " Command-e for ConqueTerm
+  map <D-e> :call StartTerm()<CR>
 
   " Command-Return for fullscreen
   "macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
