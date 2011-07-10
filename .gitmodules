@@ -22,10 +22,6 @@
 	path = bundle/vim-rails
   url = https://github.com/tpope/vim-rails.git
   ignore=dirty
-[submodule "bundle/vim-preview"]
-	path = bundle/vim-preview
-  url = https://github.com/greyblake/vim-preview.git
-  ignore=dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
   url = https://github.com/ervandew/supertab

@@ -1,6 +1,6 @@
 set nocompatible
 
-:let mapleader=","
+:let mapleader=" "
 :imap jj <Esc>
 
 set number
@@ -39,12 +39,9 @@ set laststatus=2
 set guitablabel=%M%t
 set linespace=1
 set guifont=Monaco:h12
-
-" Display extra whitespace
-"set list listchars=tab:».,trail:·
-set list listchars=tab:..,trail:·
-
 colorscheme ir_black
+" Display extra whitespace
+set list listchars=tab:..,trail:·
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -73,7 +70,7 @@ if has("autocmd")
     \   exe "normal g`\"" |
     \ endif
 else
-  set autoindent		" always set autoindenting on
+  set autoindent " always set autoindenting on
 endif " has("autocmd")
 
 

@@ -12,23 +12,23 @@ Then "cd" into the repo and run this to update submodules:
 
 Link vimrc, and gvimrc
 
-    ln -s .vim/vimrc .vimrc
-    ln -s .vim/gvimrc .gvimrc		
+    ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/gvimrc ~/.gvimrc
 
 ### Updating to the latest version
 
   cd .vim
   git pull
-  git submodule sync 
+  git submodule sync
   git submodule update --init --recursive
 
 ### Help tags
 
 At first usage of vim execute:
-	
-	:Helptags to generate tags
 
-This will make the plugins documentations available upon :help
+    :Helptags
+
+to generate tags. This will make the plugins documentations available upon :help
 
 ## Customization
 

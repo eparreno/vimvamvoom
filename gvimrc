@@ -1,11 +1,12 @@
 " Don't beep
 set visualbell
 
+" Start without the toolbar
+set guioptions=aAce
+
 " No toolbar
 set guioptions-=T
 
-" Start without the toolbar
-set guioptions=aAce
 " Use console dialogs
 set guioptions+=c
 
