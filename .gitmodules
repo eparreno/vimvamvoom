@@ -50,3 +50,7 @@
 	path = bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
   ignore=dirty
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim
+  ignore=dirty

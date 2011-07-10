@@ -130,6 +130,11 @@ checks for syntax errors in many languages
 http://www.vim.org/scripts/script.php?script_id=2736
 https://github.com/scrooloose/syntastic/
 
+### Snipmate
+
+TextMate's snippets features in Vim<br/>
+http://www.vim.org/scripts/script.php?script_id=2540
+
 ## Contribute
 
 I'm always happy to take pull requests from others and improve this vim distribution. Go ahead and fork me!
@@ -138,4 +143,4 @@ I'm always happy to take pull requests from others and improve this vim distribu
 
 Emili Parreño
 Vim, Vam, Voom is based on various vim distributions and vim config files.
-Thanks to Fabio Akita, Martin Grenfell, Carl Lerche, Yehuda Katz and Joe Ferris
+Thanks to Fabio Akita, Martin Grenfell, Carl Lerche, Yehuda Katz, Joe Ferris, Tim Pope and others.
