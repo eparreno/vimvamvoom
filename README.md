@@ -4,11 +4,11 @@ Vim, vam, voom is Emili Parreño's vim distribution. Still in development!!!
 
 ## Usage
 
-		git clone git://github.com/eparreno/vimvamvoom.git ~/.vim
+    git clone git://github.com/eparreno/vimvamvoom.git ~/.vim
 
 Then "cd" into the repo and run this to update submodules:
 
-		git submodule update --init
+    git submodule update --init
 
 Link vimrc, and gvimrc
 
@@ -39,6 +39,7 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 
 ## Base Customizations
 
+* Leader: space
 * Line numbers
 * Ruler
 * Show git branch in status line
@@ -47,46 +48,45 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 
 ## Mappings
 
-Cmd-Option-(left, right, up, down) switch viewports
-Cmd-(1-9) switch tabs
-Cmd-e Open a terminal
-<leader>=  Adjust viewports to the same size 
- 
+* Cmd-Option-(left, right, up, down) switch viewports
+* Cmd-(1-9) switch tabs
+* Cmd-e Open a terminal
+* <leader>=  Adjust viewports to the same size 
+
 ## Bundled Plugins
 
 ### Fugitive
 
-support for Git, adding convenient commands such as :Gstatus, :Gread, :Gmove, :Gdiff, :Glog etc
+support for Git, adding convenient commands such as :Gstatus, :Gread, :Gmove, :Gdiff, :Glog etc<br/>
 https://github.com/tpope/vim-fugitive.git
 
 ### Nedtree
 
-project navigator that you can open with [leader] n
+project navigator that you can open with <leader>n<br/>
 http://www.vim.org/scripts/script.php?script_id=1658
 
 ### NERD_commenter
 
-support to comment lines of code
-[count]<leader>cc 
-Comment out the current line or text selected in visual mode
-[count]<leader>c<space>
-Toggles the comment state of the selected line(s)
+support to comment lines of code<br/>
+[count]<leader>cc<br/>
+Comment out the current line or text selected in visual mode<br/>
+[count]<leader>c<space><br/>
+Toggles the comment state of the selected line(s)<br/>
 
-	
-http://www.vim.org/scripts/script.php?script_id=1218
-https://github.com/scrooloose/nerdcommenter
+http://www.vim.org/scripts/script.php?script_id=1218<br/>
+https://github.com/scrooloose/nerdcommenter<br/>
 
 ### Ack
 
-type :Ack [search pattern] to search your entire project
+type :Ack [search pattern] to search your entire project<br/>
 https://github.com/mileszs/ack.vim
 
 ### Align
 
-align blocks of text using equal sign, make comment boxes and more
-<leader>cc and <leader>c<space>
-http://mysite.verizon.net/astronaut/vim/align.html#Examples
-https://github.com/tsaleh/vim-align.git
+align blocks of text using equal sign, make comment boxes and more<br/>
+<leader>cc and <leader>c<space><br/>
+http://mysite.verizon.net/astronaut/vim/align.html#Examples<br/>
+https://github.com/tsaleh/vim-align.git<br/>
 
 
 ### Rails
