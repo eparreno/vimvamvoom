@@ -115,7 +115,7 @@ https://github.com/vim-ruby/vim-ruby
 
 ### ConqueTerm
 
-C-e Displays a terminal window
+Command+e Displays a terminal window
 https://github.com/rson/vim-conque.git
 http://code.google.com/p/conque/
 
@@ -140,7 +140,7 @@ http://www.vim.org/scripts/script.php?script_id=3025
 
 ## Contribute
 
-I'm always happy to take pull requests from others and improve this vim distribution. Go ahead and fork me!
+Contributions are welcomed. You can send your pull requests to improve this vim distribution
 
 ## Credits
 
