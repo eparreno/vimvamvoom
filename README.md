@@ -17,10 +17,10 @@ Link vimrc, and gvimrc
 
 ### Updating to the latest version
 
-  cd .vim
-  git pull
-  git submodule sync
-  git submodule update --init --recursive
+    cd .vim
+    git pull
+    git submodule sync
+    git submodule update --init --recursive
 
 ### Help tags
 
@@ -63,15 +63,15 @@ https://github.com/tpope/vim-fugitive.git
 
 ### Nedtree
 
-project navigator that you can open with <leader>n<br/>
+project navigator that you can open with leader+n<br/>
 http://www.vim.org/scripts/script.php?script_id=1658
 
 ### NERD_commenter
 
 support to comment lines of code<br/>
-[count]<leader>cc<br/>
+[count]+leader+cc<br/>
 Comment out the current line or text selected in visual mode<br/>
-[count]<leader>c<space><br/>
+[count]+leader+c+space<br/>
 Toggles the comment state of the selected line(s)<br/>
 
 http://www.vim.org/scripts/script.php?script_id=1218<br/>
@@ -85,7 +85,7 @@ https://github.com/mileszs/ack.vim
 ### Align
 
 align blocks of text using equal sign, make comment boxes and more<br/>
-<leader>cc and <leader>c<space><br/>
+leader+cc and leader+c+space<br/>
 http://mysite.verizon.net/astronaut/vim/align.html#Examples<br/>
 https://github.com/tsaleh/vim-align.git<br/>
 
@@ -95,12 +95,6 @@ https://github.com/tsaleh/vim-align.git<br/>
 Rails support for vim
 http://www.vim.org/scripts/script.php?script_id=1567
 https://github.com/tpope/vim-rails
-
-### vim-preview
-
-[leader] P previews Markdown, Rdoc, Textile, html. Requires Ruby and other gems.
-http://www.vim.org/scripts/script.php?script_id=3344
-https://github.com/greyblake/vim-preview
 
 ### supertab
 
@@ -121,7 +115,7 @@ https://github.com/vim-ruby/vim-ruby
 
 ### ConqueTerm
 
-<C-e> Displays a terminal window
+C-e Displays a terminal window
 https://github.com/rson/vim-conque.git
 http://code.google.com/p/conque/
 
