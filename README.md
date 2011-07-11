@@ -39,7 +39,7 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 
 ## Base Customizations
 
-* Leader: space
+* Leader: ","
 * Line numbers
 * Ruler
 * Show git branch in status line
@@ -48,11 +48,11 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 
 ## Mappings
 
-* Cmd-Option-(left, right, up, down) switch viewports
-* Cmd-(1-9) switch tabs
-* Cmd-e Open a terminal
-* <leader>=  Adjust viewports to the same size 
-* <leader>t open command-t 
+* Cmd+Option+(left, right, up, down) switch viewports
+* Cmd+(1-9) switch tabs
+* Cmd+e Open a terminal
+* leader+=  Adjust viewports to the same size
+* leader+t opens Command-T
 
 ## Bundled Plugins
 
@@ -150,6 +150,6 @@ I'm always happy to take pull requests from others and improve this vim distribu
 
 ## Credits
 
-Emili Parreño
-Vim, Vam, Voom is based on various vim distributions and vim config files.
-Thanks to Fabio Akita, Martin Grenfell, Carl Lerche, Yehuda Katz, Joe Ferris, Tim Pope and others.
+Emili Parreño under MIT License<br/>
+Vim, Vam, Voom is based on various vim distributions and vim config files.<br/>
+Thanks to Fabio Akita, Martin Grenfell, Carl Lerche, Yehuda Katz, Joe Ferris, Tim Pope and many others.
