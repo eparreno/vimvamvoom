@@ -52,6 +52,7 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 * Cmd-(1-9) switch tabs
 * Cmd-e Open a terminal
 * <leader>=  Adjust viewports to the same size 
+* <leader>t open command-t 
 
 ## Bundled Plugins
 
@@ -134,6 +135,14 @@ https://github.com/scrooloose/syntastic/
 
 TextMate's snippets features in Vim<br/>
 http://www.vim.org/scripts/script.php?script_id=2540
+
+### Command-T
+
+The Command-T plug-in provides an extremely fast, intuitive mechanism for opening files with 
+a minimal number of keystrokes. It's named "Command-T" because it is inspired by the "Go to File" 
+window bound to Command-T in TextMate. 
+
+http://www.vim.org/scripts/script.php?script_id=3025
 
 ## Contribute
 

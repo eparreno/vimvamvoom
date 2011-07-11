@@ -43,6 +43,9 @@ colorscheme ir_black
 " Display extra whitespace
 set list listchars=tab:..,trail:·
 
+" Command-T configuration
+let g:CommandTMaxHeight=20
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
