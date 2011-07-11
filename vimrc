@@ -1,6 +1,6 @@
 set nocompatible
 
-:let mapleader=" "
+:let mapleader=","
 :imap jj <Esc>
 
 set number

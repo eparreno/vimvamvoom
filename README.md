@@ -1,6 +1,6 @@
 # Vim, Vam, Voom
 
-Vim, vam, voom is Emili Parreño's vim distribution. Still in development!!!
+Vim, Vam, Voom is Emili Parreño's vim distribution.
 
 ## Usage
 
