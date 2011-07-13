@@ -43,6 +43,9 @@ colorscheme ir_black
 " Display extra whitespace
 set list listchars=tab:..,trail:·
 
+set background=dark
+colorscheme ir_black
+
 " Command-T configuration
 let g:CommandTMaxHeight=20
 
