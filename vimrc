@@ -15,9 +15,9 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-" Directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+" No backup
+set nobackup
+set nowritebackup
 
 " Tab completion options
 set wildmode=list:longest,list:full
