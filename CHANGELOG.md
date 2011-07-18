@@ -1,5 +1,6 @@
 ## 7/15/2011
 * Disable backups
+* Add tab numbers
 
 ## 7/11/2011
 * Add Command-T plugin

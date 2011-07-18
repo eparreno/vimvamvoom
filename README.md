@@ -48,6 +48,7 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 * Show git branch in status line
 * Soft 2-space tabs, and default hard tabs to 2 spaces
 * Highlight unwanted spaces
+* Select text in visual mode and indent with > and <
 
 ## Mappings
 
