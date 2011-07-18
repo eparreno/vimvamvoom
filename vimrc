@@ -268,3 +268,4 @@ call pathogen#runtime_append_all_bundles()
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
