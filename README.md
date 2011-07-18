@@ -114,19 +114,19 @@ https://github.com/tpope/vim-endwise
 
 ### vim-ruby
 
-https://github.com/vim-ruby/vim-ruby/wiki
+https://github.com/vim-ruby/vim-ruby/wiki<br/>
 https://github.com/vim-ruby/vim-ruby
 
 ### ConqueTerm
 
-Command+e Displays a terminal window
-https://github.com/rson/vim-conque.git
+Command+e Displays a terminal window<br/>
+https://github.com/rson/vim-conque.git<br/>
 http://code.google.com/p/conque/
 
 ### Syntastic
 
-checks for syntax errors in many languages
-http://www.vim.org/scripts/script.php?script_id=2736
+checks for syntax errors in many languages<br/>
+http://www.vim.org/scripts/script.php?script_id=2736<br/>
 https://github.com/scrooloose/syntastic/
 
 ### Snipmate
