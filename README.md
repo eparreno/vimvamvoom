@@ -87,10 +87,11 @@ https://github.com/mileszs/ack.vim
 
 ### Align
 
-align blocks of text using equal sign, make comment boxes and more<br/>
-leader+cc and leader+c+space<br/>
+align blocks of text using equal sign or any other char<br/>
+:Align
+:5,10Align
 http://mysite.verizon.net/astronaut/vim/align.html#Examples<br/>
-https://github.com/tsaleh/vim-align.git<br/>
+https://github.com/tsaleh/vim-align<br/>
 
 
 ### Rails
