@@ -49,6 +49,9 @@ colorscheme ir_black
 " Command-T configuration
 let g:CommandTMaxHeight=20
 
+" MacVIM shift+arrow-keys behavior (required in .vimrc)
+let macvim_hig_shift_movement = 1
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -78,7 +81,6 @@ if has("autocmd")
 else
   set autoindent " always set autoindenting on
 endif " has("autocmd")
-
 
 "Pathogne plugin
 call pathogen#runtime_append_all_bundles() 
