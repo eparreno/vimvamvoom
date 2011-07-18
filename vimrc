@@ -108,6 +108,10 @@ function StartTerm()
   setlocal listchars=tab:\ \ 
 endfunction
 
+autocmd VimEnter * call CdIfDirectory(expand("<amatch>"))
+autocmd FocusGained * call UpdateNERDTree()
+autocmd WinEnter * call CloseIfOnlyNerdTreeLeft()
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$', '\.git']
 map <Leader>n :NERDTreeToggle<CR>

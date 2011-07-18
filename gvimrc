@@ -106,10 +106,6 @@ endif
 map <Leader>= <C-w>=
 imap <Leader>= <Esc> <C-w>=
 
-autocmd VimEnter * call CdIfDirectory(expand("<amatch>"))
-autocmd FocusGained * call UpdateNERDTree()
-autocmd WinEnter * call CloseIfOnlyNerdTreeLeft()
-
 " Include user's local vim config
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
