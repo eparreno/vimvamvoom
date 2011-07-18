@@ -37,6 +37,19 @@ set statusline+=\ %P    "percent through file
 set laststatus=2
 
 set guitablabel=%M%t
+" tooltip on tabs ? (where did my tabs go ?)
+function! InfoGuiTooltip()"{{{
+  "get window count
+  let wincount = tabpagewinnr(tabpagenr(),'$')
+  let bufferlist=''
+  "get name of active buffers in windows
+  for i in tabpagebuflist()
+    let bufferlist .= '['.fnamemodify(bufname(i),':t'.'] '
+  endfor
+  return bufname($).' windows: '.wincount.' '.bufferlist.' '
+endfunction"}}}
+set guitabtooltip=%!InfoGuiTooltip()
+
 set linespace=1
 set guifont=Monaco:h12
 colorscheme ir_black
