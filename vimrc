@@ -108,6 +108,155 @@ function StartTerm()
   setlocal listchars=tab:\ \ 
 endfunction
 
+" NERDTree configuration
+let NERDTreeIgnore=['\.rbc$', '\~$', '\.git']
+map <Leader>n :NERDTreeToggle<CR>
+
+" Close all open buffers on entering a window if the only
+" buffer that's left is the NERDTree buffer
+function CloseIfOnlyNerdTreeLeft()
+  if exists("t:NERDTreeBufName")
+    if bufwinnr(t:NERDTreeBufName) != -1
+      if winnr("$") == 1
+        q
+      endif
+    endif
+  endif
+endfunction
+
+" If the parameter is a directory, cd into it
+function CdIfDirectory(directory)
+  let explicitDirectory = isdirectory(a:directory)
+  let directory = explicitDirectory || empty(a:directory)
+
+  if explicitDirectory
+    exe "cd " . fnameescape(a:directory)
+  endif
+
+  " Allows reading from stdin
+  " ex: git diff | mvim -R -
+  if strlen(a:directory) == 0 
+    return
+  endif
+
+  if directory
+    NERDTree
+    wincmd p
+    bd
+  endif
+
+  if explicitDirectory
+    wincmd p
+  endif
+endfunction
+
+" NERDTree utility function
+function UpdateNERDTree(...)
+  let stay = 0
+
+  if(exists("a:1"))
+    let stay = a:1
+  end
+
+  if exists("t:NERDTreeBufName")
+    let nr = bufwinnr(t:NERDTreeBufName)
+    if nr != -1
+      exe nr . "wincmd w"
+      exe substitute(mapcheck("R"), "<CR>", "", "")
+      if !stay
+        wincmd p
+      end
+    endif
+  endif
+
+  if exists(":CommandTFlush") == 2
+    CommandTFlush
+  endif
+endfunction
+
+" Utility functions to create file commands
+function CommandCabbr(abbreviation, expansion)
+  execute 'cabbrev ' . a:abbreviation . ' <c-r>=getcmdpos() == 1 && getcmdtype() == ":" ? "' . a:expansion . '" : "' . a:abbreviation . '"<CR>'
+endfunction
+
+function FileCommand(name, ...)
+  if exists("a:1")
+    let funcname = a:1
+  else
+    let funcname = a:name
+  endif
+
+  execute 'command -nargs=1 -complete=file ' . a:name . ' :call ' . funcname . '(<f-args>)'
+endfunction
+
+function DefineCommand(name, destination)
+  call FileCommand(a:destination)
+  call CommandCabbr(a:name, a:destination)
+endfunction
+
+" Public NERDTree-aware versions of builtin functions
+function ChangeDirectory(dir, ...)
+  execute "cd " . fnameescape(a:dir)
+  let stay = exists("a:1") ? a:1 : 1
+
+  NERDTree
+
+  if !stay
+    wincmd p
+  endif
+endfunction
+
+function Touch(file)
+  execute "!touch " . shellescape(a:file, 1)
+  call UpdateNERDTree()
+endfunction
+
+function Remove(file)
+  let current_path = expand("%")
+  let removed_path = fnamemodify(a:file, ":p")
+
+  if (current_path == removed_path) && (getbufvar("%", "&modified"))
+    echo "You are trying to remove the file you are editing. Please close the buffer first."
+  else
+    execute "!rm " . shellescape(a:file, 1)
+  endif
+
+  call UpdateNERDTree()
+endfunction
+
+function Mkdir(file)
+  execute "!mkdir " . shellescape(a:file, 1)
+  call UpdateNERDTree()
+endfunction
+
+function Edit(file)
+  if exists("b:NERDTreeRoot")
+    wincmd p
+  endif
+
+  execute "e " . fnameescape(a:file)
+
+ruby << RUBY
+  destination = File.expand_path(VIM.evaluate(%{system("dirname " . shellescape(a:file, 1))}))
+  pwd         = File.expand_path(Dir.pwd)
+  home        = pwd == File.expand_path("~")
+
+  if home || Regexp.new("^" + Regexp.escape(pwd)) !~ destination
+    VIM.command(%{call ChangeDirectory(fnamemodify(a:file, ":h"), 0)})
+  end
+RUBY
+endfunction
+
+" Define the NERDTree-aware aliases
+call DefineCommand("cd", "ChangeDirectory")
+call DefineCommand("touch", "Touch")
+call DefineCommand("rm", "Remove")
+call DefineCommand("e", "Edit")
+call DefineCommand("mkdir", "Mkdir")
+
+
+
+
 "Pathogne plugin
 call pathogen#runtime_append_all_bundles() 
 
