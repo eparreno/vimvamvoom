@@ -88,28 +88,28 @@ https://github.com/mileszs/ack.vim
 ### Align
 
 align blocks of text using equal sign or any other char<br/>
-:Align
-:5,10Align
+:Align<br/>
+:5,10Align<br/>
 http://mysite.verizon.net/astronaut/vim/align.html#Examples<br/>
 https://github.com/tsaleh/vim-align<br/>
 
 
 ### Rails
 
-Rails support for vim
-http://www.vim.org/scripts/script.php?script_id=1567
+Rails support for vim<br/>
+http://www.vim.org/scripts/script.php?script_id=1567<br/>
 https://github.com/tpope/vim-rails
 
 ### supertab
 
-pseudo auto-complete with tab
-http://www.vim.org/scripts/script.php?script_id=1643
+pseudo auto-complete with tab<br/>
+http://www.vim.org/scripts/script.php?script_id=1643<br/>
 https://github.com/ervandew/supertab
 
 ### Endwise
 
-support to close Ruby blocks such as ‘if’, ‘do’ with ‘end’
-http://www.vim.org/scripts/script.php?script_id=2386
+support to close Ruby blocks such as ‘if’, ‘do’ with ‘end’<br/>
+http://www.vim.org/scripts/script.php?script_id=2386<br/>
 https://github.com/tpope/vim-endwise
 
 ### vim-ruby
@@ -136,7 +136,7 @@ http://www.vim.org/scripts/script.php?script_id=2540
 
 ### Command-T
 
-The Command-T plug-in provides an extremely fast, intuitive mechanism for opening files with 
+The Command-T plug-in provides an extremely fast, intuitive mechanism for opening files with
 a minimal number of keystrokes. It's named "Command-T" because it is inspired by the "Go to File" 
 window bound to Command-T in TextMate. 
 
