@@ -50,7 +50,7 @@ colorscheme ir_black
 let g:CommandTMaxHeight=20
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
-let macvim_hig_shift_movement = 1
+""let macvim_hig_shift_movement = 1
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
