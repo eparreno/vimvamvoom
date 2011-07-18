@@ -1,5 +1,6 @@
-" Don't beep
-set visualbell
+" Don't beep && don't flash
+set visualbell t_vb=
+
 
 " Start without the toolbar
 set guioptions=aAce
@@ -10,10 +11,9 @@ set guioptions-=T
 " Use console dialogs
 set guioptions+=c
 
-" Fullscreen takes up entire screen
-set fuoptions+=maxvert,maxhorz
-
 if has("gui_macvim")
+  " Fullscreen takes up entire screen
+  set fuoptions+=maxvert,maxhorz
 
   " Command-e for ConqueTerm
   map <D-e> :call StartTerm()<CR>
