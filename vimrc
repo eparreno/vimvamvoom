@@ -55,6 +55,12 @@ vmap > >gv
 " shift+arrow-keys to select text
 set keymodel=startsel
 
+" Show the next match while entering a search
+set incsearch
+
+"Highlighting search matches
+set hlsearch
+
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 ""let macvim_hig_shift_movement = 1
 
