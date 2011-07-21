@@ -38,12 +38,13 @@ set laststatus=2
 
 set linespace=1
 set guifont=Monaco:h12
+set t_Co=256
 colorscheme ir_black
 " Display extra whitespace
 set list listchars=tab:..,trail:·
 
 set background=dark
-colorscheme ir_black
+colorscheme default
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
@@ -55,8 +56,25 @@ vmap > >gv
 " shift+arrow-keys to select text
 set keymodel=startsel
 
+" Show the next match while entering a search
+set incsearch
+
+"Highlighting search matches
+set hlsearch
+
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 ""let macvim_hig_shift_movement = 1
+" Opens an edit command with the path of the currently edited file filled in
+" Normal mode: <Leader>e
+map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+" Opens a tab edit command with the path of the currently edited file filled in
+" Normal mode: <Leader>t
+map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
+" Inserts the path of the currently edited file into a command
+" Command mode: Ctrl+P
+cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.

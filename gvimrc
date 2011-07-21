@@ -10,6 +10,9 @@ set guioptions-=T
 " Use console dialogs
 set guioptions+=c
 
+colorscheme ir_black
+
+
 set showtabline=2 " always show tabs in gvim, but not vim
 " set up tab labels with tab number, buffer name, number of windows
 function! GuiTabLabel()
