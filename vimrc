@@ -80,8 +80,6 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
-  filetype off
-  filetype on
   set nohlsearch
 endif
 
@@ -268,7 +266,12 @@ call DefineCommand("mkdir", "Mkdir")
 
 
 "Pathogne plugin
-call pathogen#runtime_append_all_bundles() 
+filetype off " Needed so pathogen also loads ftdetect plugins.
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" Re-enable per filetype plugins and indents after loading pathogen plugin
+filetype plugin indent on
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
