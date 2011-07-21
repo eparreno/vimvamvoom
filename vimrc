@@ -80,6 +80,8 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
+  filetype off
+  filetype on
   set nohlsearch
 endif
 
