@@ -56,7 +56,6 @@ vmap > >gv
 " shift+arrow-keys to select text
 set keymodel=startsel
 
-<<<<<<< HEAD
 " Show the next match while entering a search
 set incsearch
 
@@ -65,7 +64,6 @@ set hlsearch
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 ""let macvim_hig_shift_movement = 1
-=======
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -77,7 +75,6 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
->>>>>>> 80f04986f450229d383f5732581e13836b64f28c
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
