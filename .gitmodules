@@ -66,6 +66,3 @@
 [submodule "bundle/treetop"]
 	path = bundle/treetop
 	url = https://github.com/nanki/treetop.vim.git
-[submodule "bundle/vim-pathogen"]
-	path = bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
