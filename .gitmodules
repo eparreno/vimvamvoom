@@ -63,6 +63,3 @@
 [submodule "bundle/CSApprox"]
 	path = bundle/CSApprox
 	url = https://github.com/vim-scripts/CSApprox.git
-[submodule "bundle/treetop"]
-	path = bundle/treetop
-	url = git@github.com:lleirborras/treetop.vim.git
