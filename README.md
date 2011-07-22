@@ -143,6 +143,19 @@ window bound to Command-T in TextMate.
 
 http://www.vim.org/scripts/script.php?script_id=3025
 
+### Treetop
+
+Syntax highlighting for treetop files.
+
+https://github.com/nanki/treetop
+
+
+### Pathogen
+
+Pathogen is a simple library for manipulating comma delimited path options. 
+
+http://www.vim.org/scripts/script.php?script_id=2332
+
 ## Contributors
 
 Contributions are welcomed. You can send your pull requests to improve this vim distribution
