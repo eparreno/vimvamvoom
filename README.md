@@ -10,7 +10,7 @@ Then "cd" into the repo and run this to update submodules:
 
     git submodule update --init
 
-    rm -rf ~/.vim/bundles/snipmate/snippets
+    rm -rf ~/.vim/bundle/snipmate/snippets
 
 Link vimrc, and gvimrc
 
