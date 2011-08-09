@@ -14,9 +14,6 @@ colorscheme ir_black
 
 set showtabline=2 " always show tabs in gvim, but not vim
 
-" Maximize gvim/macvim window.
-set lines=999 columns=999
-
 " set up tab labels with tab number, buffer name, number of windows
 function! GuiTabLabel()
   let label = ''
