@@ -50,13 +50,15 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 * Highlight unwanted spaces
 * Select text in visual mode and indent with > and <
 
-## Mappings
+# Mappings
 
 * Cmd+Option+(left, right, up, down) switch viewports
 * Cmd+(1-9) switch tabs
 * Cmd+e Open a terminal
 * leader+=  Adjust viewports to the same size
 * leader+t opens Command-T
+* Fullscreen: Cmd + R
+* Find in project with ack: Cmd + Shift + F
 
 ## Bundled Plugins
 
