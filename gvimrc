@@ -12,8 +12,8 @@ set guioptions+=c
 
 colorscheme ir_black
 
-
 set showtabline=2 " always show tabs in gvim, but not vim
+
 " set up tab labels with tab number, buffer name, number of windows
 function! GuiTabLabel()
   let label = ''
@@ -55,10 +55,10 @@ if has("gui_macvim")
   map <D-e> :call StartTerm()<CR>
 
   " Command-Return for fullscreen
-  "macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
+  macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
 
   " Command-Shift-F for Ack
-  " map <D-F> :Ack<space>
+  map <D-F> :Ack<space>
 
   " Command-/ to toggle comments
   "map <D-/> <plug>NERDCommenterToggle<CR>
