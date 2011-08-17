@@ -39,12 +39,11 @@ set laststatus=2
 set linespace=1
 set guifont=Monaco:h12
 set t_Co=256
-colorscheme ir_black
-" Display extra whitespace
-set list listchars=tab:..,trail:·
-
 set background=dark
 colorscheme default
+
+" Display extra whitespace
+set list listchars=tab:..,trail:·
 
 " Command-T configuration
 let g:CommandTMaxHeight=20

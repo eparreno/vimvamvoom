@@ -57,12 +57,11 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
+  ignore=dirty
 [submodule "snippets"]
 	path = snippets
 	url = https://github.com/scrooloose/snipmate-snippets.git
-[submodule "bundle/CSApprox"]
-	path = bundle/CSApprox
-	url = https://github.com/vim-scripts/CSApprox.git
+  ignore=dirty
 [submodule "bundle/treetop"]
 	path = bundle/treetop
 	url = https://github.com/lleirborras/treetop.vim.git
