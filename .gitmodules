@@ -60,7 +60,3 @@
 [submodule "snippets"]
 	path = snippets
 	url = https://github.com/scrooloose/snipmate-snippets.git
-[submodule "bundle/CSApprox"]
-	path = bundle/CSApprox
-	url = https://github.com/vim-scripts/CSApprox.git
-  ignore=dirty
