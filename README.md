@@ -23,7 +23,7 @@ Link vimrc, and gvimrc
     git pull
     git submodule sync
     git submodule update --init --recursive
-    rm -rf ~/.vim/bundles/snipmate/snippets
+    rm -rf ~/.vim/bundle/snipmate/snippets
 
 ### Help tags
 
