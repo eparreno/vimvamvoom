@@ -23,7 +23,7 @@ Link vimrc, and gvimrc
     git pull
     git submodule sync
     git submodule update --init --recursive
-    rm -rf ~/.vim/bundles/snipmate/snippets
+    rm -rf ~/.vim/bundle/snipmate/snippets
 
 ### Help tags
 
@@ -144,6 +144,19 @@ a minimal number of keystrokes. It's named "Command-T" because it is inspired by
 window bound to Command-T in TextMate. 
 
 http://www.vim.org/scripts/script.php?script_id=3025
+
+### Treetop
+
+Syntax highlighting for treetop files.
+
+https://github.com/nanki/treetop
+
+
+### Pathogen
+
+Pathogen is a simple library for manipulating comma delimited path options. 
+
+http://www.vim.org/scripts/script.php?script_id=2332
 
 ## Contributors
 
