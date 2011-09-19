@@ -66,3 +66,6 @@
 	path = bundle/treetop
 	url = https://github.com/lleirborras/treetop.vim.git
   ignore=dirty
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
