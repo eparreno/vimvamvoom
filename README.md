@@ -158,6 +158,12 @@ Pathogen is a simple library for manipulating comma delimited path options.
 
 http://www.vim.org/scripts/script.php?script_id=2332
 
+### Solarized
+
+Solarized is a precision colorscheme with dark/light modes.
+
+https://github.com/altercation/vim-colors-solarized
+
 ## Contributors
 
 Contributions are welcomed. You can send your pull requests to improve this vim distribution
