@@ -1,3 +1,6 @@
+## 9/11/2011
+* add Solarized colorscheme
+
 ## 7/15/2011
 * Disable backups
 * Add tab numbers
