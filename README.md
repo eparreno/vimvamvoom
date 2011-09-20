@@ -164,11 +164,16 @@ Solarized is a precision colorscheme with dark/light modes.
 
 https://github.com/altercation/vim-colors-solarized
 
+add this line to ~/.gvimrc to allow solarixed
+
+
+
 ## Contributors
 
 Contributions are welcomed. You can send your pull requests to improve this vim distribution
 
 * Lleïr Borràs
+* Arnau Siches
 
 ## Credits
 
