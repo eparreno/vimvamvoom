@@ -6,7 +6,7 @@ Vim, Vam, Voom is Emili Parreño's vim distribution.
 
     git clone git://github.com/eparreno/vimvamvoom.git ~/.vim
 
-Then "cd" into the repo and run:
+Then "cd" into the repo and run (notice: if you're using RVM, change to your Ruby system version before install or update):
 
     rake install
 
