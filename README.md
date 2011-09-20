@@ -6,24 +6,14 @@ Vim, Vam, Voom is Emili Parreño's vim distribution.
 
     git clone git://github.com/eparreno/vimvamvoom.git ~/.vim
 
-Then "cd" into the repo and run this to update submodules:
+Then "cd" into the repo and run:
 
-    git submodule update --init
-
-    rm -rf ~/.vim/bundle/snipmate/snippets
-
-Link vimrc, and gvimrc
-
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+    rake install
 
 ### Updating to the latest version
 
     cd .vim
-    git pull
-    git submodule sync
-    git submodule update --init --recursive
-    rm -rf ~/.vim/bundle/snipmate/snippets
+    rake update
 
 ### Help tags
 
@@ -36,9 +26,6 @@ to generate tags. This will make the plugins documentations available upon :help
 ## Customization
 
 Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
-
-    echo color desert  > ~/.vimrc.local
-    echo color molokai > ~/.gvimrc.local
 
 ## Base Customizations
 
@@ -64,17 +51,22 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 
 ### Fugitive
 
-support for Git, adding convenient commands such as :Gstatus, :Gread, :Gmove, :Gdiff, :Glog etc<br/>
+Support for Git, adding convenient commands such as :Gstatus, :Gread, :Gmove, :Gdiff, :Glog etc<br/>
 https://github.com/tpope/vim-fugitive.git
+
+### Matchit
+
+Configure % to match more than just single characters.  You can match words and even regular expressions.<br/>
+http://www.vim.org/scripts/script.php?script_id=39
 
 ### Nedtree
 
-project navigator that you can open with leader+n<br/>
+Project navigator that you can open with leader+n<br/>
 http://www.vim.org/scripts/script.php?script_id=1658
 
 ### NERD_commenter
 
-support to comment lines of code<br/>
+Support to comment lines of code<br/>
 [count]+leader+cc<br/>
 Comment out the current line or text selected in visual mode<br/>
 [count]+leader+c+space<br/>
@@ -95,7 +87,6 @@ align blocks of text using equal sign or any other char<br/>
 :5,10Align<br/>
 http://mysite.verizon.net/astronaut/vim/align.html#Examples<br/>
 https://github.com/tsaleh/vim-align<br/>
-
 
 ### Rails
 
@@ -164,9 +155,9 @@ Solarized is a precision colorscheme with dark/light modes.
 
 https://github.com/altercation/vim-colors-solarized
 
-add this line to ~/.gvimrc to allow solarixed
+add this line to ~/.gvimrc to use solarized
 
-
+    colorscheme 'solarized'
 
 ## Contributors
 
