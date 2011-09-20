@@ -12,7 +12,7 @@ Then "cd" into the repo and run (notice: if you're using RVM, change to your Rub
 
 ### Updating to the latest version
 
-    cd .vim
+    cd ~/.vim
     rake update
 
 ### Help tags
@@ -39,12 +39,12 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 
 # Mappings
 
-* Cmd+Option+(left, right, up, down) switch viewports
-* Cmd+(1-9) switch tabs
-* Cmd+e Open a terminal
-* leader+=  Adjust viewports to the same size
-* leader+t opens Command-T
-* Fullscreen: Cmd + R
+* Cmd + Option + (left, right, up, down) switch viewports
+* Cmd + (1-9) switch tabs
+* Cmd + e Open a terminal
+* leader + =  Adjust viewports to the same size
+* leader + t opens Command-T
+* Fullscreen: Cmd + Enter
 * Find in project with ack: Cmd + Shift + F
 
 ## Bundled Plugins
