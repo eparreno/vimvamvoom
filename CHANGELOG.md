@@ -1,3 +1,6 @@
+## 10/10/2011
+* Press F5 to clean trailing whitespace or tabs
+
 ## 20/9/2011
 * add matchit plugin
 * add rake tasks to install and update

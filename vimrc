@@ -75,6 +75,9 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
+" Hitting F5 will clean out all trailing whitespace or tabs
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>:retab<CR>
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
@@ -260,9 +263,6 @@ call DefineCommand("touch", "Touch")
 call DefineCommand("rm", "Remove")
 call DefineCommand("e", "Edit")
 call DefineCommand("mkdir", "Mkdir")
-
-
-
 
 "Pathogne plugin
 filetype off " Needed so pathogen also loads ftdetect plugins.
