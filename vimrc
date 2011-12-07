@@ -26,14 +26,17 @@ set wildmenu
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,test/fixtures/*,vendor/gems/*
 
 "statusline setup
-set statusline=%f       "tail of the filename
-set statusline+=%y      "filetype
+let encoding = '[' . (&fenc==''?&enc:&fenc) . ((exists('+bomb') && &bomb) ? ',B' : '') . ']'
+
+set statusline=%f                         "tail of the filename
+set statusline+=%y                        "filetype
+set statusline+=%{encoding}               "encoding
 set statusline+=%{fugitive#statusline()}
-set statusline+=%m      "modified flag
-set statusline+=%=      "left/right separator
-set statusline+=%c,     "cursor column
-set statusline+=%l/%L   "cursor line/total lines
-set statusline+=\ %P    "percent through file
+set statusline+=%m                        "modified flag
+set statusline+=%=                        "left/right separator
+set statusline+=%c,                       "cursor column
+set statusline+=%l/%L                     "cursor line/total lines
+set statusline+=\ %P                      "percent through file
 set laststatus=2
 
 set linespace=1
