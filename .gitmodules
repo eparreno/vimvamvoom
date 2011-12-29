@@ -73,3 +73,7 @@
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
  ignore=dirty
+[submodule "bundle/closetag"]
+	path = bundle/closetag
+	url = https://github.com/vim-scripts/closetag.vim
+ ignore=dirty
