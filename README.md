@@ -160,6 +160,12 @@ add this line to ~/.gvimrc to use solarized
 
     colorscheme 'solarized'
 
+### Closetag
+
+Closetag allows closing HTML/XML tags easily using `<C-_>`.
+
+https://github.com/vim-scripts/closetag.vim
+
 ## Contributors
 
 Contributions are welcomed. You can send your pull requests to improve this vim distribution
