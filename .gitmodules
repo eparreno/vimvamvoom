@@ -73,3 +73,6 @@
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
  ignore=dirty
+[submodule "bundle/vim-cofee-script"]
+	path = bundle/vim-cofee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
