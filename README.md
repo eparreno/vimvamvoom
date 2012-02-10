@@ -46,6 +46,7 @@ Create ~/.vimrc.local and ~/.gvimrc.local for any local customizations.
 * leader + t opens Command-T
 * Fullscreen: Cmd + Enter
 * Find in project with ack: Cmd + Shift + F
+* F5 to clean out all trailing whitespace or tabs
 
 ## Bundled Plugins
 
