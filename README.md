@@ -143,6 +143,11 @@ Syntax highlighting for treetop files.
 
 https://github.com/nanki/treetop
 
+### vim-coffee-script
+
+This project adds CoffeeScript support to the vim editor. It handles syntax, indenting, and compiling. Also included is an eco syntax and support for CoffeeScript in Haml and HTML.
+
+https://github.com/kchmck/vim-coffee-script
 
 ### Pathogen
 

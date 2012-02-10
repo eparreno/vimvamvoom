@@ -1,4 +1,7 @@
 ## 10/10/2011
+* CoffeeScript support
+
+## 10/10/2011
 * Press F5 to clean trailing whitespace or tabs
 
 ## 20/9/2011
