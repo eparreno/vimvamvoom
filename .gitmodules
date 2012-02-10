@@ -80,3 +80,6 @@
   path = bundle/closetag
   url = https://github.com/vim-scripts/closetag.vim
   ignore=dirty
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = git://github.com/briancollins/vim-jst.git
