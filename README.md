@@ -143,6 +143,11 @@ Syntax highlighting for treetop files.
 
 https://github.com/nanki/treetop
 
+### vim-coffee-script
+
+This project adds CoffeeScript support to the vim editor. It handles syntax, indenting, and compiling. Also included is an eco syntax and support for CoffeeScript in Haml and HTML.
+
+https://github.com/kchmck/vim-coffee-script
 
 ### Pathogen
 
@@ -160,12 +165,15 @@ add this line to ~/.gvimrc to use solarized
 
     colorscheme 'solarized'
 
+<<<<<<< HEAD
+=======
 ### Closetag
 
 Closetag allows closing HTML/XML tags easily using `<C-_>`.
 
 https://github.com/vim-scripts/closetag.vim
 
+>>>>>>> b41ed4512fb48f064a71d5d62d9834f6709502b1
 ## Contributors
 
 Contributions are welcomed. You can send your pull requests to improve this vim distribution

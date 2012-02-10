@@ -271,6 +271,7 @@ call DefineCommand("mkdir", "Mkdir")
 filetype off " Needed so pathogen also loads ftdetect plugins.
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+call pathogen#infect()
 
 " Re-enable per filetype plugins and indents after loading pathogen plugin
 filetype plugin indent on

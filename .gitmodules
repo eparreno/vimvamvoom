@@ -1,79 +1,85 @@
 [submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+  path = bundle/vim-fugitive
   url = https://github.com/tpope/vim-fugitive.git
   ignore=dirty
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+  path = bundle/nerdtree
   url = https://github.com/scrooloose/nerdtree.git
   ignore=dirty
 [submodule "bundle/ack"]
-	path = bundle/ack
+  path = bundle/ack
   url = https://github.com/mileszs/ack.vim.git
   ignore=dirty
 [submodule "bundle/vim-align"]
-	path = bundle/vim-align
+  path = bundle/vim-align
   url = https://github.com/tsaleh/vim-align.git
   ignore=dirty
 [submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
+  path = bundle/nerdcommenter
   url = https://github.com/scrooloose/nerdcommenter.git
   ignore=dirty
 [submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
+  path = bundle/vim-rails
   url = https://github.com/tpope/vim-rails.git
   ignore=dirty
 [submodule "bundle/supertab"]
-	path = bundle/supertab
+  path = bundle/supertab
   url = https://github.com/ervandew/supertab
   ignore=dirty
 [submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
+  path = bundle/vim-ruby
   url = https://github.com/vim-ruby/vim-ruby.git
   ignore=dirty
 [submodule "bundle/vim-endwise"]
-	path = bundle/vim-endwise
+  path = bundle/vim-endwise
   url = https://github.com/tpope/vim-endwise
   ignore=dirty
 [submodule "bundle/vim-conque"]
-	path = bundle/vim-conque
+  path = bundle/vim-conque
   url = https://github.com/rson/vim-conque.git
   ignore=dirty
 [submodule "bundle/syntastic"]
-	path = bundle/syntastic
+  path = bundle/syntastic
   url = https://github.com/scrooloose/syntastic/
   ignore=dirty
 [submodule "bundle/delimitMate"]
-	path = bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
+  path = bundle/delimitMate
+  url = https://github.com/Raimondi/delimitMate.git
   ignore=dirty
 [submodule "bundle/vim-ragtag"]
-	path = bundle/vim-ragtag
-	url = https://github.com/tpope/vim-ragtag.git
+  path = bundle/vim-ragtag
+  url = https://github.com/tpope/vim-ragtag.git
   ignore=dirty
 [submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim
+  path = bundle/snipmate
+  url = https://github.com/msanders/snipmate.vim
   ignore=dirty
 [submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
+  path = bundle/command-t
+  url = git://git.wincent.com/command-t.git
   ignore=dirty
 [submodule "snippets"]
-	path = snippets
-	url = https://github.com/scrooloose/snipmate-snippets.git
+  path = snippets
+  url = https://github.com/scrooloose/snipmate-snippets.git
   ignore=dirty
 [submodule "bundle/treetop"]
-	path = bundle/treetop
-	url = https://github.com/lleirborras/treetop.vim.git
+  path = bundle/treetop
+  url = https://github.com/lleirborras/treetop.vim.git
   ignore=dirty
 [submodule "bundle/solarized"]
-	path = bundle/solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
+  path = bundle/solarized
+  url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/matchit"]
-	path = bundle/matchit
-	url = git://github.com/vim-scripts/matchit.zip.git
- ignore=dirty
+  path = bundle/matchit
+  url = git://github.com/vim-scripts/matchit.zip.git
+  ignore=dirty
+[submodule "bundle/vim-cofee-script"]
+  path = bundle/vim-cofee-script
+  url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/closetag"]
-	path = bundle/closetag
-	url = https://github.com/vim-scripts/closetag.vim
- ignore=dirty
+  path = bundle/closetag
+  url = https://github.com/vim-scripts/closetag.vim
+  ignore=dirty
+[submodule "bundle/vim-jst"]
+	path = bundle/vim-jst
+	url = git://github.com/briancollins/vim-jst.git
