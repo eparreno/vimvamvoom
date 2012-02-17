@@ -1,4 +1,10 @@
 ## 10/10/2011
+<<<<<<< HEAD
+* CoffeeScript support
+
+## 10/10/2011
+=======
+>>>>>>> b41ed4512fb48f064a71d5d62d9834f6709502b1
 * Press F5 to clean trailing whitespace or tabs
 
 ## 20/9/2011
